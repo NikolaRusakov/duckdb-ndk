@@ -52,7 +52,11 @@ add_compile_definitions(DUCKDB_EXTENSION_JSON_LINKED)
 add_compile_definitions(DUCKDB_BUILD_LIBRARY)
 
 # Fixes https://github.com/microsoft/vcpkg/issues/21345#issuecomment-983222649
-set(ENV{VCPKG_ANDROID_API_LEVEL} 23)
+if(CMAKE_SYSTEM_VERSION MATCHES "^[0-9]+$")
+    set(ANDROID_PLATFORM android-${CMAKE_SYSTEM_VERSION} CACHE STRING "")
+else()
+    set(ANDROID_PLATFORM ${CMAKE_SYSTEM_VERSION} CACHE STRING "")
+endif()
 
 # Declares and names the project.
 
