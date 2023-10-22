@@ -50,6 +50,10 @@ add_compile_definitions(DUCKDB_EXTENSION_PARQUET_LINKED)
 add_compile_definitions(DUCKDB_EXTENSION_ICU_LINKED)
 add_compile_definitions(DUCKDB_EXTENSION_JSON_LINKED)
 add_compile_definitions(DUCKDB_BUILD_LIBRARY)
+
+# Fixes https://github.com/microsoft/vcpkg/issues/21345#issuecomment-983222649
+set(ENV{VCPKG_ANDROID_API_LEVEL} 23)
+
 # Declares and names the project.
 
 project("duckdb_ndk")
