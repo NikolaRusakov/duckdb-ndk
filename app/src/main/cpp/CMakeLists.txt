@@ -44,7 +44,12 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/duckdb/extension/icu/third_party
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/duckdb/extension/icu/third_party/icu/i18n)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/duckdb/extension/icu/third_party/icu/common/unicode)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/duckdb/extension/icu/third_party/icu/common)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/duckdb/extension/icu/include)
 
+add_compile_definitions(DUCKDB_EXTENSION_PARQUET_LINKED)
+add_compile_definitions(DUCKDB_EXTENSION_ICU_LINKED)
+add_compile_definitions(DUCKDB_EXTENSION_JSON_LINKED)
+add_compile_definitions(DUCKDB_BUILD_LIBRARY)
 # Declares and names the project.
 
 project("duckdb_ndk")
