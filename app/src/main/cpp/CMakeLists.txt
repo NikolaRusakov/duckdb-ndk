@@ -30,6 +30,20 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/duckdb/extension/json/yyjson/inc
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/duckdb/third_party/libpg_query/include)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/duckdb/extension/json/include)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/duckdb/extension/parquet/include)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/duckdb/third_party/httplib)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/duckdb/third_party/thrift)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/duckdb/third_party/thrift/thrift)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/duckdb/third_party/parquet)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/duckdb/third_party/zstd/include/zstd/common)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/duckdb/third_party/snappy)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/duckdb/third_party/zstd/include/zstd/common)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/duckdb/third_party/zstd/include)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/duckdb/third_party/zstd/compress)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/duckdb/third_party/zstd/decompress)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/duckdb/extension/icu/third_party/icu/i18n/unicode)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/duckdb/extension/icu/third_party/icu/i18n)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/duckdb/extension/icu/third_party/icu/common/unicode)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/duckdb/extension/icu/third_party/icu/common)
 
 # Declares and names the project.
 
