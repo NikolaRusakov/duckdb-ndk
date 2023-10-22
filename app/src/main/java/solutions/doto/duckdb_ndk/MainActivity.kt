@@ -16,19 +16,19 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         // Example of a call to a native method
-        binding.sampleText.text = stringFromJNI()
+        binding.sampleText.text = "hello"
     }
 
     /**
      * A native method that is implemented by the 'duckdb_ndk' native library,
      * which is packaged with this application.
      */
-    external fun stringFromJNI(): String
+    // external fun stringFromJNI(): String
 
-    companion object {
-        // Used to load the 'duckdb_ndk' library on application startup.
-        init {
-            System.loadLibrary("duckdb_ndk")
-        }
-    }
+    // companion object {
+    //     // Used to load the 'duckdb_ndk' library on application startup.
+    //     init {
+    //         System.loadLibrary("duckdb_ndk")
+    //     }
+    // }
 }
